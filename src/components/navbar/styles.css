@@ -9,7 +9,7 @@ header li, header a, header button {
   header {
     display: flex;
     padding: 1px 2%;
-    position: sticky;
+    position: fixed;
     width: 100%;
     z-index: 1000;
     /* sebelumnya z index:1; dan diubah ke z-index:1000; agar navbar tidak bisa di timpa elemen lain */
