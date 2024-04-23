@@ -1,6 +1,7 @@
 import NavBar from "../../components/navbar/index"
 import Hero from "./components/hero/index"
 import Section1 from "./components/section-1/index"
+import Section2 from "./components/section-2/index"
 
 const index = () => {
   return (
@@ -8,6 +9,7 @@ const index = () => {
       <NavBar/>
       <Hero/>
       <Section1/>
+      <Section2/>
     </div>
   )
 }
