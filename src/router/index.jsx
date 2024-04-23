@@ -5,9 +5,7 @@ const index = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-	<Index/>
-      )
+      element: <Index/>
     }
   ])
 

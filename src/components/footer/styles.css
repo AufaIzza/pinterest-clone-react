@@ -1,0 +1,28 @@
+/* footer section start */
+footer{
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    max-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer > div {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer > div > a {
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  /* footer section end */
