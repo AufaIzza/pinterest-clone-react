@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "./styles.css"
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
             <li class="nav-item"><Link to="/explore">Explore</Link></li>
           </ul>
         </div>
+      </div>
 
         <div class="navbar-right">
           <ul class="navlist-right">
@@ -29,7 +31,6 @@ const index = () => {
         <div class="menu-toggle">
           <i class='bx bx-menu'></i>
         </div>
-      </div>
     </header>
   )
 }
