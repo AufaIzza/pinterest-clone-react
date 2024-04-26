@@ -2,35 +2,35 @@ import "./styles.css"
 
 const index = () => {
     return (
-        <section class="login-section">
+        <section className="login-section">
                     <div id="container-login-section">
                         <div id="container-login-inside-upper">
-                            <i class="fa fa-pinterest container-login-inside-upper-logo"></i>
-                            <h1 class="container-login-inside-upper-big-font">Welcome to Pinterest</h1>
+                            <i className="fa fa-pinterest container-login-inside-upper-logo"></i>
+                            <h1 className="container-login-inside-upper-big-font">Welcome to Pinterest</h1>
                             <p>Find new ideas to try</p>
                             <div id="container-login-inside-upper-form">
                                 <form action="" method="post">
-                                    <div class="container-login-inside-upper-form-input">
-                                        <label for="email">Email</label>
+                                    <div className="container-login-inside-upper-form-input">
+                                        <label htmlFor="email">Email</label>
                                         <input type="email" name="email" id="email" placeholder="Email"/>
                                     </div>
-                                    <div class="container-login-inside-upper-form-input">
-                                        <label for="password">Password</label>
+                                    <div className="container-login-inside-upper-form-input">
+                                        <label htmlFor="password">Password</label>
                                         <input type="password" name="password" id="password"
                                             placeholder="Create a password"/>
                                     </div>
-                                    <div class="container-login-inside-upper-form-input">
-                                        <label for="birthdate">Birthdate</label>
+                                    <div className="container-login-inside-upper-form-input">
+                                        <label htmlFor="birthdate">Birthdate</label>
                                         <input type="date" name="birthdate" id="birthdate"/>
                                     </div>
-                                    <button type="submit" class="container-login-inside-upper-form-button"
+                                    <button type="submit" className="container-login-inside-upper-form-button"
                                         id="container-login-inside-upper-form-button-continue">Continue</button>
                                 </form>
                                 <p>OR</p>
-                                <button class="container-login-inside-upper-form-button"
+                                <button className="container-login-inside-upper-form-button"
                                     id="container-login-inside-upper-form-button-facebook">Continue with
                                     Facebook</button>
-                                <button class="container-login-inside-upper-form-button"
+                                <button className="container-login-inside-upper-form-button"
                                     id="container-login-inside-upper-form-button-google">Continue with
                                     Google</button>
                             </div>
