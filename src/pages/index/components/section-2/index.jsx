@@ -11,97 +11,81 @@ import ScandanavianBedroom from "./assets/scandinavian-bedroom-696dfba5.png"
 import DeckOfDreams from "./assets/deck-of-dreams-205a139e.png"
 import ServeMyDrinks from "./assets/serve-my-drinks-4de83489.png"
 
-// TODO
-// CONVERT THE SCRIPT TAG
-/*
-    <script>
-        let scrollAmount = 0;
-        const imageList = document.querySelector(".image-listF");
-        const imageItems = document.querySelectorAll(".image-itemF");
-  
-        // Tombol navigasi ke kanan
-        document.querySelector(".nav-right").addEventListener("click", () => {
-          const imageWidth = imageList.offsetWidth; // Mengambil lebar dari imageList
-          scrollAmount += imageWidth; // Menambahkan lebar penuh dari imageList ke scrollAmount
-          imageList.scrollTo({
-            top: 0,
-            left: scrollAmount,
-            behavior: "smooth",
-          });
-        });
-  
-        document.querySelector(".nav-left").addEventListener("click", () => {
-          const imageWidth = imageList.offsetWidth; // Mengambil lebar dari imageList
-          scrollAmount -= imageWidth; // Mengurangi lebar penuh dari imageList dari scrollAmount
-          imageList.scrollTo({
-            top: 0,
-            left: scrollAmount,
-            behavior: "smooth",
-          });
-        });
-        function pauseAutoScroll() {
-          clearInterval(autoScrollInterval); // Menghentikan auto scroll
-          setTimeout(() => {
-            autoScrollInterval = setInterval(autoScroll, 3000); // Memulai kembali auto scroll setelah 3 detik
-          }, 3000);
-        }
-        // Fungsi untuk melakukan scroll otomatis
-        function autoScroll() {
-          const imageWidth = imageList.offsetWidth; // Mengambil lebar dari imageList
-          scrollAmount += imageWidth; // Menambahkan lebar penuh dari imageList ke scrollAmount
-  
-          // Jika scrollAmount melebihi lebar maksimum, kembali ke awal
-          if (scrollAmount >= imageList.scrollWidth) {
-            scrollAmount = 0;
-          }
-  
-          imageList.scrollTo({
-            top: 0,
-            left: scrollAmount,
-            behavior: "smooth",
-          });
-        }
-  
-        // Mengatur interval untuk scroll otomatis setiap 3 detik
-        setInterval(autoScroll, 3000);
-      </script>
+import { useState } from "react"
 
+/*
+  TODO fix the bug
+  so it seems that the scrollAmount only changes after the function is done being called, which means that the scroll function isnt being called right after the amount changes but before it changed, need to fix it somehow
 */
 
 const index = () => {
+    let [scrollAmount, setScrollAmount] = useState(0)
+
+    function setAmount(imageWidth) {
+      if (scrollAmount == 0 && imageWidth == -500) {
+        imageWidth = 3000
+      } else if (scrollAmount == 3000 && imageWidth == 500) {
+        imageWidth = -3000
+      }
+      setScrollAmount(scroll => scroll + imageWidth, scroll())
+    }
+
+    function navLeftButtonClick() {
+      const imageList = document.querySelector('.image-listF')
+      const imageWidth = imageList.offsetWidth
+      setAmount(-imageWidth)
+    }
+
+    function scroll() {
+      console.log(scrollAmount)
+      const imageList = document.querySelector('.image-listF')
+      imageList.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: "smooth",
+      })
+    }
+
+    function navRightButtonClick() {
+      const imageList = document.querySelector('.image-listF')
+      const imageWidth = imageList.offsetWidth
+      setAmount(imageWidth)
+      
+    }
        
     return (
-    <section class="section-febri" id="home">
-        <main class="content-feb">
+    <section className="section-febri" id="home">
+        <main className="content-feb">
           <h1>Save <span>ideas</span> you like</h1>
           <p>
             Collect your favorit so you can <br />
             get back to them later.
           </p>
-          <a href="#" class="cta">Explore</a>
+          <a href="#" className="cta">Explore</a>
         </main>
-        <div class="container-F">
-          <div class="slider-wrapperF">
-            <div class="image-listF">
-              <img src={fa1} alt="1" class="image-itemF" />
-              <img src={fa2} alt="2" class="image-itemF" />
-              <img src={fa3} alt="3" class="image-itemF" />
-              <img src={fa4} alt="4" class="image-itemF" />
-              <img src={fa5} alt="5" class="image-itemF" />
-              <img src={fa6} alt="6" class="image-itemF" />
-              <img src={fa7} alt="7" class="image-itemF" />
-              <button class="nav-left">{"<"}</button>
-              <button class="nav-right">{">"}</button>
+        <div className="container-F">
+          <div className="slider-wrapperF">
+            <div className="image-listF">
+              <img src={fa1} alt="1" className="image-itemF" />
+              <img src={fa2} alt="2" className="image-itemF" />
+              <img src={fa3} alt="3" className="image-itemF" />
+              <img src={fa4} alt="4" className="image-itemF" />
+              <img src={fa5} alt="5" className="image-itemF" />
+              <img src={fa6} alt="6" className="image-itemF" />
+              <img src={fa7} alt="7" className="image-itemF" />
+              <button className="nav-left" onClick={() => {navLeftButtonClick()}}>{"<"}</button>
+              <button className="nav-right" onClick={() => {navRightButtonClick()
+              }}>{">"}</button>
             </div>
           </div>
-          <div class="image-gallery">
-            <figure class="future-home">
+          <div className="image-gallery">
+            <figure className="future-home">
               <a href="#">
                 <img src={FutureHome} alt="Future Home" />
                 <figcaption>Fern future home vibes</figcaption>
               </a>
             </figure>
-            <figure class="./assets/scandinavian-bedroom">
+            <figure className="./assets/scandinavian-bedroom">
               <a href="#">
                 <img
                   src= {ScandanavianBedroom}
@@ -110,7 +94,7 @@ const index = () => {
                 <figcaption>My scandinavian bedroom</figcaption>
               </a>
             </figure>
-            <figure class="theDeckOfMyDreams">
+            <figure className="theDeckOfMyDreams">
               <a href="#">
                 <img
                   src= {DeckOfDreams}
@@ -119,7 +103,7 @@ const index = () => {
                 <figcaption>The deck of my dreams</figcaption>
               </a>
             </figure>
-            <figure class="serve-mydrinks">
+            <figure className="serve-mydrinks">
               <a href="#">
                 <img src={ServeMyDrinks} alt="Serve My Drinks" />
                 <figcaption>Serve my drinks in style</figcaption>
@@ -127,8 +111,8 @@ const index = () => {
             </figure>
           </div>
         </div>
-        <div class="top-border"></div>
-        <div class="bottom-border"></div>
+        <div className="top-border"></div>
+        <div className="bottom-border"></div>
       </section>
     )
 }
