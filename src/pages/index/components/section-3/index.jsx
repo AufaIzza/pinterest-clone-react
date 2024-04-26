@@ -4,18 +4,18 @@ import "./styles.css"
 const index = () => {
     return (
         <section id="section3">
-            <div class="containersection3">
+            <div className="containersection3">
                 <div>
                     <img src={ImageSection3} alt=""/>
                 </div>
                 <div>
-                    <div class="wrapper">
-                        <div class="wrap">
+                    <div className="wrapper">
+                        <div className="wrap">
                             <div>
                                 <h1>See it, make it, try it, do it</h1>
                                 <p>The best part of Pinterest is discovering new things and ideas from people around the world.</p>
                             </div>
-                            <div class="eksplore">
+                            <div className="eksplore">
                                 <a href="#">Explore</a>
                             </div>
                         </div>
