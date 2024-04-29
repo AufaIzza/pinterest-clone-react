@@ -11,7 +11,7 @@ const index = () => {
           <ul className="navlist-left">
             <li className="nav-item"><Link to="/today">Today</Link></li>
             <li className="nav-item"><Link to="/watch">Watch</Link></li>
-            <li className="nav-item"><Link to="/explore">Explore</Link></li>
+            <li className="nav-item"><Link to="/ideas">Explore</Link></li>
           </ul>
         </div>
       </div>
