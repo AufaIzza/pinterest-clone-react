@@ -12,6 +12,7 @@ import DeckOfDreams from "./assets/deck-of-dreams-205a139e.png"
 import ServeMyDrinks from "./assets/serve-my-drinks-4de83489.png"
 
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 const index = () => {
   useEffect(() => {
@@ -60,7 +61,7 @@ const index = () => {
           Collect your favorit so you can <br />
           get back to them later.
         </p>
-        <a href="#" className="cta">Explore</a>
+        <Link to={"/ideas"} className="cta">Explore</Link>
       </main>
       <div className="container-F">
         <div className="slider-wrapperF">

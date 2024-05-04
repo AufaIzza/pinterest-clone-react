@@ -4,6 +4,7 @@ import NavBar from "../../components/navbar/index"
 const index = () => {
     return(
         <div>
+            <NavBar/>
             <Section2/>
         </div>
     )

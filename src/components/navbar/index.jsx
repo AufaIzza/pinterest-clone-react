@@ -18,9 +18,6 @@ const index = () => {
 
         <div className="navbar-right">
           <ul className="navlist-right">
-            <li className="nav-item"><Link to="Tentang">About</Link></li>
-            <li className="nav-item"><Link to="Bisnis">Business</Link></li>
-            <li className="nav-item"><Link to="Bisnis">Blog</Link></li>
           </ul>
 
           <div className="button">

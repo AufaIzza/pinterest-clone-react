@@ -1,5 +1,27 @@
+.todayi-container-div {
+    padding-top: 100px;
+}
+
 .todayi-cards-div {
     display:flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.todayi-date-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todayi-date-div .todayi-date-date {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.todayi-date-div .todayi-date-text {
+    font-weight: 600;
+    font-size: 36px;
 }
