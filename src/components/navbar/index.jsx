@@ -5,7 +5,7 @@ const index = () => {
   return (
     <header>
       <div className="navbar-left">
-        <a className="nav-icon" href="logo"><i className='bx bxl-pinterest'></i></a>
+        <Link className="nav-icon" to={"/"}><i className='bx bxl-pinterest'></i></Link>
 
         <div className="navbar">
           <ul className="navlist-left">
