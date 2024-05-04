@@ -1,0 +1,19 @@
+.containerToday{
+    padding-top: 150px;
+    width: 444px;
+    height: 285px;
+    position: relative;
+    padding-left: 100px;
+}
+
+.containerToday img{
+    width: 100%;
+}
+
+p{
+   text-align: center;
+}
+
+h1{
+    text-align: center;
+}

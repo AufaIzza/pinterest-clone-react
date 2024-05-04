@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Index from "../pages/index/index"
 import Ideas from "../pages/ideas/index"
 import Videos from "../pages/videos/index"
+import Today from "../pages/today/index"
 
 const index = () => {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const index = () => {
     {
       path: "/watch",
       element: <Videos/>
+    },
+    {
+      path: "/today",
+      element: <Today/>
     }
   ])
 
