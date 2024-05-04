@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import ImageSection3 from "./assets/imageSection3.png"
 import "./styles.css"
 
@@ -16,7 +17,7 @@ const index = () => {
                                 <p>The best part of Pinterest is discovering new things and ideas from people around the world.</p>
                             </div>
                             <div className="eksplore">
-                                <a href="#">Explore</a>
+                                <Link to={"/ideas"}>Explore</Link>
                             </div>
                         </div>
                     </div>

@@ -1,21 +1,13 @@
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 const index = () => {
     return (
         <footer>
         <div>
-          <a href="">Terms of Service</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help</a>
-          <a href="">Iphone App</a>
-          <a href="">Android App</a>
-          <a href="">Users</a>
-          <a href="">Collections</a>
-          <a href="">Shopping</a>
-          <a href="">Today</a>
-          <a href="">Explore</a>
-          <a href="">Watch</a>
-          <a href="">Shop</a>
+          <Link to={"/today"}>Today</Link>
+          <Link to={"/ideas"}>Explore</Link>
+          <Link to={"/watch"}>Watch</Link>
         </div>
       </footer>
     )
