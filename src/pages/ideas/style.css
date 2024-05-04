@@ -1,0 +1,131 @@
+/* SECTION 1 */
+.section-1   {
+    position: relative;
+    width: 100%;
+    padding-top: 9%;
+    padding-bottom: 14rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+  
+  .explore-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+    margin: -11% auto;
+  }
+  
+  img {
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  img:hover {
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .explore {
+    position: relative;
+    height: 700%;
+  }
+  
+  .explore img {
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .explore-items  {
+    position: absolute;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: -80px;
+    color: whitesmoke;
+    font-size: 22px; 
+  }
+  
+  /* SECTION 2 */
+  .section-2   {
+    position: relative;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 14rem;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+  
+  .explore-container2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+    margin: -14% auto;
+  }
+  
+  .explore2 {
+    position: relative;
+    height: 700%;
+  }
+  
+  .explore2 img {
+    width: 237px;
+    height: 110px;
+    object-fit: cover;
+  
+  }
+  
+  .explore-items2  {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .section-3  {
+      position: relative;
+      width: 518%;
+      padding-top: 9%;
+      padding-bottom: 14rem;
+      display: flex;
+      justify-content: center;
+      letter-spacing: 1px;
+      font-size: 22px;
+    }
+  
+    .section-3 h5 {
+      display: flex ;
+      font-size: 12px;
+      background: #dfdede;
+      padding: 9px 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: .5s;
+    }
+  
+  .section-3 h5:hover {
+    background-color:  #b4b3b3 ;
+  }
+
+  /* Section 3 (ridwan) */
+  .container-section3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    margin: 2%;
+  }

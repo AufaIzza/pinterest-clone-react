@@ -5,13 +5,13 @@ const index = () => {
   return (
     <header>
       <div className="navbar-left">
-        <a className="nav-icon" href="logo"><i className='bx bxl-pinterest'></i></a>
+        <Link className="nav-icon" to={"/"}><i className='bx bxl-pinterest'></i></Link>
 
         <div className="navbar">
           <ul className="navlist-left">
             <li className="nav-item"><Link to="/today">Today</Link></li>
             <li className="nav-item"><Link to="/watch">Watch</Link></li>
-            <li className="nav-item"><Link to="/explore">Explore</Link></li>
+            <li className="nav-item"><Link to="/ideas">Explore</Link></li>
           </ul>
         </div>
       </div>
