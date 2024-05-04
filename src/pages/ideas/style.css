@@ -18,14 +18,14 @@
     margin: -11% auto;
   }
   
-  img {
+  .explore-container img, .explore-container2 img, .container-section3 img{
     height: 300px;
     border-radius: 20px;
     cursor: pointer;
     position: relative;
     transition: 0.5s;
   }
-  img:hover {
+  .explore-container img:hover, .explore-container2 img:hover, .container-section3 img:hover{
     height: 300px;
     border-radius: 20px;
     cursor: pointer;
