@@ -3,23 +3,23 @@ import "./styles.css"
 const index = () => {
     return (
         <section className="login-section">
-                    <div id="container-login-section">
-                        <div id="container-login-inside-upper">
-                            <i className="fa fa-pinterest container-login-inside-upper-logo"></i>
-                            <h1 className="container-login-inside-upper-big-font">Welcome to Pinterest</h1>
-                            <p>Find new ideas to try</p>
-                            <div id="container-login-inside-upper-form">
+                    <div className="w-[484px] text-center m-auto relative bg-white shadow-md rounded-[32px]">
+                        <div className="min-h-[400px] pt-5 pr-[10px] pb-6">
+                            <i className="fa fa-pinterest text-5xl text-red-600"></i>
+                            <h1 className=" text-3xl mt-0 mr-auto mb-1">Welcome to Pinterest</h1>
+                            <p className=" text-base mt-0 mr-auto mb-5">Find new ideas to try</p>
+                            <div className="text-center m-auto mb-3 w-[268px]">
                                 <form action="" method="post">
-                                    <div className="container-login-inside-upper-form-input">
+                                    <div className="flex flex-col mb-2">
                                         <label htmlFor="email">Email</label>
                                         <input type="email" name="email" id="email" placeholder="Email"/>
                                     </div>
-                                    <div className="container-login-inside-upper-form-input">
+                                    <div className="flex flex-col mb-2">
                                         <label htmlFor="password">Password</label>
                                         <input type="password" name="password" id="password"
                                             placeholder="Create a password"/>
                                     </div>
-                                    <div className="container-login-inside-upper-form-input">
+                                    <div className="flex flex-col mb-2">
                                         <label htmlFor="birthdate">Birthdate</label>
                                         <input type="date" name="birthdate" id="birthdate"/>
                                     </div>
