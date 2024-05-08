@@ -1,5 +1,5 @@
 import NavBar from "../../components/navbar/index"
-import Hero from "./components/hero/index"
+import Hero from "../../components/views/index/hero/index"
 import Section1 from "./components/section-1/index"
 import Section2 from "./components/section-2/index"
 import Section3 from "./components/section-3/index"
