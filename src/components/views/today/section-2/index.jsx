@@ -3,7 +3,6 @@ import Image1 from "../../../../assets/today/3ef1746ee5289eb936a5c4d8479ecf7c.jp
 
 import Card from "./card/index"
 import Tomorrow from "./tomorrow/index"
-import "./styles.css"
 
 const index = () => {
     return(
