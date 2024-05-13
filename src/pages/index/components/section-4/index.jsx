@@ -1,5 +1,5 @@
 import "./styles.css"
-import SignUp from "./components/sign-up/index"
+import SignUp from "../../../../components/views/index/section-4/sign-up/index"
 
 const index = () => {
     return (

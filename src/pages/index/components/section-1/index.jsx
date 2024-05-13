@@ -25,7 +25,7 @@ const index = () => (
             <h1>Search for an idea</h1>
             <p>What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you find.</p>
             <div>
-              <Link to="/">Explore</Link>
+              <Link to="/ideas">Explore</Link>
             </div>
     </div>
 </section>
