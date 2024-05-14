@@ -1,12 +1,12 @@
 /* Section 3 start */
 
-.containersection3{
+/* .containersection3{
     display: flex;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
-.containersection3 img{
+/* .containersection3 img{
     height: 100vh;
     width: auto;
 }
@@ -68,5 +68,5 @@
         width: 100%;
         height: auto;
     }
-}
+} */
 /* Section 3 end */
